@@ -75,7 +75,7 @@ export default function CoinsTable() {
     return coins.filter(
       (coin) =>
         coin.name.toLowerCase().includes(search) ||
-        coin.symbol.toLowerCase().includes(search)
+        coin.symbol.toUpperCase().includes(search)
     );
   };
 
